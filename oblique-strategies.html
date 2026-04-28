@@ -9,6 +9,8 @@
 <body>
     <h1 id="Strategy">...</h1>
 
+    <script src="oblique-stratiges.js"></script>
+
     <script>
         window.onload = function(){
             var strategy = document.getElementById("Strategy");
@@ -22,25 +24,55 @@
             //     strategy.innerHTML= "World";
             // }
 
-            //version 3 - complet
-            const Strategies = [
-            "Chaton",   //0
-            "Loutre",   //1
-            "Chèvre",   //2
-            "Platypus"  //3
-                        //...99
-            ];
+            // //version 3 - complet // CMD MAJ 7
+            // const Strategies = [
+            // "Chaton",   //0
+            // "Loutre",   //1
+            // "Chèvre",   //2
+            // "Platypus"  //3
+            //             //...99
+            //];
         
-            let total = Strategies.lenght;  // 100
-            let rando = Math.random();      // 0.345678
-            let hasar = rando * total;      // 34.5678
-            let choix = Math.floor (hasar);  // 34
+            // let total = Strategies.length;  // 100
+            // let rando = Math.random();      // 0.345678
+            // let hasar = rando * total;      // 34.5678
+            // let choix = Math.floor (hasar);  // 34
+            // strategy.innerHTML = Strategies[choix];
 
-            strategy.innerHTML = Strategies[choix];
+            //version compacte
+            strategy.innerHTML = Strategies[Math.floor(Math.random()* Strategies.length)];
             
 
     }
     </script>
+    <button onclick="window.location.reload();"
+    >⌘&thinsp;R</button>
+
+    <style>
+        body{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 80vh;
+            background-color: #EEE;
+        }
+
+        #Strategy{
+            width: 20ch;
+            font-size: 2rem;
+            font-weight: 400;
+            color: rgb(76, 2, 173);
+            padding: 1rem;
+            aspect-ratio: 16/9;
+            background-color: white;
+            border: 1px solid rgb(76, 2, 173);
+            border-radius: 1rem;
+            box-shadow: 0.2rem 0.3rem 1rem rgb(76, 2, 173);
+        }
+        button{ opacity: 0.3;}
+        button:hover{opacity: 1;}
+    </style>
     
 </body>
 </html>
