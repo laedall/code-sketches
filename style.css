@@ -3,3 +3,24 @@ body{
     background-color: #f1357a;
     color: white;
 }
+
+/*navigation*/
+nav ul {
+    list-style-type: none;
+    padding: 0;}
+
+nav li{ margin-top: 1rem;}
+
+/*les vagues en dessous des link*/
+a{color: inherit;}
+
+a{
+    text-decoration-style: wavy;
+    text-decoration-thickness: 2px;
+    text-decoration-color: #260f4f;
+    text-decoration-skip-ink: none;
+    text-underline-offset: 0.25em;
+}
+
+a:hover{background: #260f4f;color: rgb(255, 255, 255);}
+
