@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <script src="p5.js"></script>
+    <script src="oblique-stratiges.js"></script>
     <h1 id="Strategy">...</h1>
 
     <script src="oblique-stratiges.js"></script>
@@ -55,16 +57,18 @@
             justify-content: center;
             align-items: center;
             min-height: 80vh;
-            background-color: #EEE;
+            background-color: #bf81e6;
         }
 
         #Strategy{
-            width: 20ch;
-            font-size: 2rem;
+            font-size: clamp(1rem, 4vw, 12rem);
             font-weight: 400;
             color: rgb(76, 2, 173);
+            
+            width: 20ch;
             padding: 1rem;
             aspect-ratio: 16/9;
+            
             background-color: white;
             border: 1px solid rgb(76, 2, 173);
             border-radius: 1rem;

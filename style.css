@@ -2,7 +2,10 @@ body{
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     background-color: #f1357a;
     color: white;
+    margin: auto;
 }
+
+img{ max-width: 100%;}
 
 /*navigation*/
 nav ul {
@@ -24,3 +27,27 @@ a{
 
 a:hover{background: #260f4f;color: rgb(255, 255, 255);}
 
+/* gallery */
+.gallery{
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(
+        auto-fill, 
+        minmax(
+            min(15rem, 100%), 1fr
+        )
+    );
+}
+
+.gallery a {
+    position: relative;
+}
+
+.gallery a .description{
+    display: none;
+    position: absolute; bottom: 0ss;
+}
+
+.gallery a:hover .description{
+    display: block;
+}
