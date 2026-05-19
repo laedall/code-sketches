@@ -2,7 +2,7 @@ let posX = 200;
 let posY = 200;
 let posR = 200;
 
-let size = 20;
+let size = 70;
 
 let vitX = 3.123;
 let vitY = 5.4321;
@@ -11,11 +11,10 @@ let vitR = 1;
 function setup() {
   frameRate(60);
   createCanvas(windowWidth,windowHeight);
+  background(00000);
 }
 
 function draw() {
-  //background(220);
-  
   stroke(posR,12,234);
   fill(posR,123,234);
   
@@ -36,6 +35,6 @@ function draw() {
     vitY= vitY * -1;
   }
   
-  square(posX, posY, size);
+  triangle(posX, posY, size);
 
 }

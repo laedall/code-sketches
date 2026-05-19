@@ -1,12 +1,8 @@
 let posX = 200;
 let posY = 200;
-let posR = 200;
-
 let size = 20;
-
-let vitX = 3.123;
-let vitY = 5.4321;
-let vitR = 1;
+let vitX = Math.random(2);
+let vitY = Math.random(2);
 
 function setup() {
   frameRate(60);
@@ -15,18 +11,11 @@ function setup() {
 
 function draw() {
   //background(220);
+  stroke(123,12,234);
+  fill(12,123,234);
   
-  stroke(posR,12,234);
-  fill(posR,123,234);
-  
-   posX+= vitX;
+  posX+= vitX;
   posY += vitY
-  
-  posR += vitR;
-  if( posR >= 255 || posR <=0){
-    vitR = vitR * -1;
-  }
- 
   
   if( posX >= width-size|| posX <=0){
     vitX= vitX * -1;

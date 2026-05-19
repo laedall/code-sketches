@@ -11,11 +11,10 @@ let vitR = 1;
 function setup() {
   frameRate(60);
   createCanvas(windowWidth,windowHeight);
+  background(255);
 }
 
 function draw() {
-  //background(220);
-  
   stroke(posR,12,234);
   fill(posR,123,234);
   
@@ -36,6 +35,6 @@ function draw() {
     vitY= vitY * -1;
   }
   
-  square(posX, posY, size);
+  circle(posX, posY, size);
 
 }
