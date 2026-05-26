@@ -11,7 +11,7 @@ let vitR = 1;
 function setup() {
   frameRate(60);
   createCanvas(windowWidth,windowHeight);
-  background(00000);
+  background(#FFF);
 }
 
 function draw() {
